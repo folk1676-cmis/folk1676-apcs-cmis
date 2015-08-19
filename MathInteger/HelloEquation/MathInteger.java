@@ -1,5 +1,4 @@
 import javax.swing.JOptionPane;
-
 public class MathInteger
     {
         public static void main ( String [] args )
