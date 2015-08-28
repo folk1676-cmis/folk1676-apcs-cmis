@@ -1,11 +1,9 @@
 public class FundamentalsP5
     {public static void main ( String [] args )
         {
-            String movie1 = "Southpaw";
-            String movie2 = "Fightclub";
-            String movie3 = "Million Dollar Baby";
-            String song1 = "Suicidal Thoughts";
-            String song2 = "Welcome to Forever";
-            String song3 = "Ghetto Gospel";
+            String[] favMov = { "Southpaw" , "Fight Club" , "Million Dollar Baby"};
+            for ( int index = 0; index < favMov.length; index++ )
+            {System.out.print( favMov[index]);
         }
     }
+}
