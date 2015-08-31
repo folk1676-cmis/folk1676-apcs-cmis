@@ -9,13 +9,13 @@ public class FundamentalsP5
         
             System.out.println("\n" );
             
-            String[] favSong = { "Welcome to Forever" , "Go Big or Go Home", "See You Again"  };
+            String[] favSong = { "Welcome to Forever" , " Best Day of My Lie", " 22"  };
             int x = 0;
-            while (x < favSong.length-1)
+            while (x <= favSong.length-1)
             
             {
                 System.out.print(favSong[x] + "," );
                 x++;
+            }
         }
-    }
 }
