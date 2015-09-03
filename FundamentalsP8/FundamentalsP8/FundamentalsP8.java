@@ -1,6 +1,6 @@
 public class FundamentalsP8
 {
-    public static void FundamentalsP8( String args[] )
+    public static void FundamentalsP8( String [] args )
        {
            String[] favArtists = { "Coldplay" , "Charlie Puth" , "Taylor Swift" }; //define three artists
            for ( int x = 0; x < favArtists.length; x++ )
