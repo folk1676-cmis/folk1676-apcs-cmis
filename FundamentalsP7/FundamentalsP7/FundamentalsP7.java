@@ -3,8 +3,8 @@ public class FundamentalsP7
     public static void main ( String args[] )
     {
         int[]num = new int[10];
-        int negative = 0;
-        int positive = 0;
+        int negative = 0; //set negative to 0
+        int positive = 0; //set positive to 0
         for ( int index = 0; index < num.length ; index++)
         {
             int i = 0;
