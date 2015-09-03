@@ -10,10 +10,10 @@ public class FundamentalsP3
             if(r == 0)
                 {
                     System.out.println( x + " is an even integer." );
-                }
+                }//end if
             if(r == 1)
                 {
                     System.out.println( x + " is an odd integer." );
-                }
-            }
-        }
+                }//end if
+            }//end main
+        }//end FundamentalsP3

@@ -5,5 +5,5 @@ public class FundamentalsP1
             System.out.println("Favorite color: Blue");
             System.out.println("Favorite movie: South Paw");
             System.out.println("Favorite musical group: Timeflies");
-        }
-    }
+        }//end main
+    }//end FundamentalsP1

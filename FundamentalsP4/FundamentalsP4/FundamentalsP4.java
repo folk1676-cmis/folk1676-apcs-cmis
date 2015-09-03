@@ -3,6 +3,6 @@ public class FundamentalsP4
         {for( int ctr = 1; ctr < 11; ctr ++ )
             {
                 System.out.println( ctr + "\t" + ctr*ctr + "\t" + (((int)(Math.random()*ctr)+ctr)));
-            }
-        }
-    }
+            }//end for loop
+        }//end main
+    }//end FundamentalsP5

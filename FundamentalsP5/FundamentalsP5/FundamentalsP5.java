@@ -5,7 +5,7 @@ public class FundamentalsP5
             for ( int x = 0; x < favMov.length; x++ )
             {
                 System.out.println( favMov[x]);
-            }
+            }//end for loop
         
             System.out.println("\n" );
             
@@ -16,6 +16,6 @@ public class FundamentalsP5
             {
                 System.out.print(favSong[x] + "," );
                 x++;
-            }
-        }
-}
+            }//end for loop
+        }//end main
+}//end FundamentalsP5
