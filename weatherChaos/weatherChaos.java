@@ -28,7 +28,7 @@ public class weatherChaos
         for ( int i = 0; i < temp.length; i++ )
         {
             temp[i] = (int) (Math.random() * 200) - 100;
-            swing = temp[i] - temp[i];
+            swing = Math.abs(temp[i] - temp[i]);
             if ( temp[i] < 0 )
             {
                 des = "freezing";
@@ -77,5 +77,6 @@ public class weatherChaos
         System.out.println( "Minimum temperature: " + min );
         System.out.println( "Maximum temperature: " + max );
         System.out.println( "Average temperature: " + sum / userinput);
+        System.out.println( "Highest swing: " );
     }
 }
