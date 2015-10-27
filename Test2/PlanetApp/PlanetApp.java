@@ -15,7 +15,7 @@ public class PlanetApp
             System.out.println(p);
         }
         //Uncomment the section below when you want to work on it.
-        /* 
+    
         System.out.println("Three Args\n==========");
         for ( int i = 0; i < nPlanets; i++ )
         {
@@ -26,6 +26,6 @@ public class PlanetApp
             p = new Planet( maxPopulation, percentSpaceMarines, maxSpaceMarinesPerStarDestroyer );
             System.out.println(p);
         }
-        */
+
     }
 }
