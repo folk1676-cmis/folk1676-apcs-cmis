@@ -24,7 +24,6 @@ public class Planet
         this.nPlanets = nPlanets;
     }
     public String toString()
-    
     {
         String output = new String();
         output = "Name: " + "\n" + "Relationship: " + relationship + "\n" + "Radius: " + radius +  "\n" + "Population: " + maxPopulation-((int)(Math.random())*maxPopulation) + "\n" + "Space Marines as percent of Pop: " + percentageSpaceMarines + "\n" + "Space Marines: " + maxPopulation-((int)(Math.random())*maxPopulation) +"\n" + "Star Destroyers: " + maxSpaceMarinesPerStarDestroyer +"\n" + "Space Marines per star destroyer: " + "" +"\n";
