@@ -20,6 +20,7 @@ public class Planet
         this.nPlanets = nPlanets;
     }
     public String toString()
+    
     {
         String output = new String();
         output = "Name: " + "\n" + "Relationship: " + "\n" + "Radius: " +  "\n" + "Population: " + maxPopulation + "\n" + "Space Marines as percent of Pop: " +  "\n" + "Space Marines: " + percentageSpaceMarines +"\n" + "Star Destroyers: " + maxSpaceMarinesPerStarDestroyer +"\n" + "Space Marines per star destroyer: " + "" +"\n";

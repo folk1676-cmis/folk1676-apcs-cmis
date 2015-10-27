@@ -26,5 +26,6 @@ public class PlanetApp
             p = new Planet( maxPopulation, percentSpaceMarines, maxSpaceMarinesPerStarDestroyer );
             System.out.println(p);
         }
+
     }
 }
