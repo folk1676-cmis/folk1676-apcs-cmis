@@ -6,7 +6,7 @@ public class Planet
     private int nPlanets;
     private double radius;
     private String p;
-    private String relationship;
+    private String [] relationship;
     public Planet()
     {
         maxPopulation = 1;
@@ -14,7 +14,7 @@ public class Planet
         maxSpaceMarinesPerStarDestroyer = 1;
         nPlanets = 1;
         radius = 1;
-        relationship = new String [] {"Hostile" , "At War", "Neutra", "Frenidly", "Ally"};
+        relationship = new String [] {"Hostile" , "At War", "Neutral", "Friendly", "Ally"};
     }
     public Planet (int maxPopulation, double percentageSpaceMarines, int maxSpaceMarinesPerStarDestroyer, int nPlanets)
     {
@@ -26,7 +26,7 @@ public class Planet
     public String toString()
     {
         String output = new String();
-        output = "Name: " + "\n" + "Relationship: " + relationship + "\n" + "Radius: " + radius +  "\n" + "Population: " + maxPopulation-((int)(Math.random())*maxPopulation) + "\n" + "Space Marines as percent of Pop: " + percentageSpaceMarines + "\n" + "Space Marines: " + maxPopulation-((int)(Math.random())*maxPopulation) +"\n" + "Star Destroyers: " + maxSpaceMarinesPerStarDestroyer +"\n" + "Space Marines per star destroyer: " + "" +"\n";
+        output = "Name: " + "\n" + "Relationship: " + relationship + "\n" + "Radius: " + radius +  "\n" + "Population: " + (maxPopulation-(int)((Math.random()*maxPopulation))) + "\n" + "Space Marines as percent of Pop: " + percentageSpaceMarines + "\n" + "Space Marines: " + maxPopulation-((int)(Math.random())*maxPopulation) +"\n" + "Star Destroyers: " + maxSpaceMarinesPerStarDestroyer +"\n" + "Space Marines per star destroyer: " + "" +"\n";
         return output;
     }
 }
