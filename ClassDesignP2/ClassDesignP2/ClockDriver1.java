@@ -3,14 +3,13 @@ public class ClockDriver1
 {
     public static void main (String argvs [] )
     {
-        String hr = JOptionPane.showInputDialog("Hour: ");
-        int hr = Integer.parseInt( hr );
+        String inp1 = JOptionPane.showInputDialog("Hour: ");
+        int hr = Integer.parseInt( inp1 );
         Clock otherClock = new Clock ();
-        String min = JOptionPane.showInputDialog("Minute: ");
-        int min = Integer.parseInt( min );
-        
-        String sec = JOptionPane.showInputDialog("Second: ");
-        int sec = Integer.parseInt( sec );
-        
+        String inp2 = JOptionPane.showInputDialog("Minute: ");
+        int min = Integer.parseInt( inp2 );        
+        String inp3 = JOptionPane.showInputDialog("Second: ");
+        int sec = Integer.parseInt( inp3 );
+        System.out.println( hr + " hours " + min + " mins " + sec + " secs" );
     }
 } //end class ClockDriver

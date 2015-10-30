@@ -18,7 +18,6 @@ public class Student
         this.gradelevel = gradelevel;
         this.gpa = gpa;
     }
-
     public String toString( )
     {
         String output = new String();
