@@ -1,11 +1,14 @@
 #BlueJ package file
+dependency1.from=FootballDriver
+dependency1.to=Football
+dependency1.type=UsesDependency
 objectbench.height=76
 objectbench.width=686
 package.editor.height=400
 package.editor.width=560
-package.editor.x=90
-package.editor.y=90
-package.numDependencies=0
+package.editor.x=50
+package.editor.y=50
+package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
 package.showUses=true
