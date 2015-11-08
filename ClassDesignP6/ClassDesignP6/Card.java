@@ -6,13 +6,11 @@ public class Card
     {
         Cards = "7";
         Suit = "♣";
-
     }    
     public Card (String Cards, String Suit )    
     {
         this.Cards = Cards;
         this.Suit = Suit;
-
     }   
     public String toString()
     {
@@ -20,5 +18,4 @@ public class Card
                 "%s %s", Cards, Suit);
         return result;
     } 
-
 }
