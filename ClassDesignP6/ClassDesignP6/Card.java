@@ -1,24 +1,24 @@
 public class Card
 {
-    private int num;
-    private int cardsGiven;
-    private String MyHand;
-
+    public String Cards;
+    public String Suit;
     public Card()
     {
-        num = 52;
-        cardsGiven = 1;
-    }
-    
-    public Card (int num, int cardsGiven)
+        Cards = "7";
+        Suit = "♣";
+
+    }    
+    public Card (String Cards, String Suit )    
     {
-        this.MyHand = MyHand;
-    }
-    
+        this.Cards = Cards;
+        this.Suit = Suit;
+
+    }   
     public String toString()
     {
-        String output = new String ();
-        output = MyHand;
-        return output;
-    }
+        String result =  String.format (
+                "%s %s", Cards, Suit);
+        return result;
+    } 
+
 }
