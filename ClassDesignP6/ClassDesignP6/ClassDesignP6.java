@@ -8,7 +8,7 @@ public class ClassDesignP6
 
         int [] a = new int [2];
         int [] b = new int [2];
-        
+
         Card [] Dealer = new Card[2];
         Card [] Player1 = new Card[2];
         Card [] Player2 = new Card[2];
@@ -19,7 +19,7 @@ public class ClassDesignP6
         String Winner;
         String [] Cards =  {"1", " 2", " 3", " 4", " 5", " 6", " 7", " 8", " 9", " 10", " J", " Q", " K"};
         String [] Suit = {"♥", " ♦", " ♣", " ♠"};
-        
+
         System.out.print("DEALER'S HANDS:"); 
         System.out.print("\n");
         for( int i = 0; i < Dealer.length; i++)
@@ -89,8 +89,8 @@ public class ClassDesignP6
         }
         System.out.print(" Total value for Dealer: " + totalValue + "\n");
         System.out.print("\n");
-        
-        System.out.print("PLAYER 1'S  HANDS's HANDS"); 
+
+        System.out.print("PLAYER 1'S  HAND'S"); 
         System.out.print("\n");
         for( int i = 0; i < Player1.length; i++)
         {
@@ -180,8 +180,8 @@ public class ClassDesignP6
         } 
         totalValuePlayer = 0;
         System.out.print("\n");
-        
-        System.out.print("PLAYER 2'S  HANDS's HANDS"); 
+
+        System.out.print("PLAYER 2'S  HAND'S"); 
         System.out.print("\n");
         for( int i = 0; i < Player1.length; i++)
         {
@@ -271,7 +271,7 @@ public class ClassDesignP6
         } 
         totalValuePlayer = 0;
         System.out.print("\n");
-        
+
         System.out.print("PLAYER 3'S  HANDS"); 
         System.out.print("\n");
         for( int i = 0; i < Player1.length; i++)
@@ -362,7 +362,7 @@ public class ClassDesignP6
         } 
         totalValuePlayer = 0;
         System.out.print("\n");
-        
+
         System.out.print("PLAYER 4'S  HANDS"); 
         System.out.print("\n");
         for( int i = 0; i < Player1.length; i++)
@@ -453,7 +453,7 @@ public class ClassDesignP6
         } 
         totalValuePlayer = 0;
         System.out.print("\n");
-        
+
         System.out.print("PLAYER 5'S  HANDS"); 
         System.out.print("\n");
         for( int i = 0; i < Player1.length; i++)
