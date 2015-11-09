@@ -88,7 +88,6 @@ public class ClassDesignP6
             System.out.print("Dealer value : " + value + "\n");
         }
         System.out.print(" Total value for Dealer: " + totalValue + "\n");
-        System.out.print("\n");
         
         System.out.print("PLAYER 1'S  HANDS's HANDS"); 
         System.out.print("\n");
@@ -158,7 +157,6 @@ public class ClassDesignP6
             System.out.print(" Player value : " + value + "\n");
         }
         System.out.print( " Total value for Player : " + totalValuePlayer + "\n");
-        System.out.print("\n");
         if (totalValuePlayer==21)
         {
             Winner = " Player 1";
@@ -249,7 +247,6 @@ public class ClassDesignP6
             System.out.print(" Player value : " + value + "\n");
         }
         System.out.print( " Total value for Player : " + totalValuePlayer + "\n");
-        System.out.print("\n");
         if (totalValuePlayer==21)
         {
             Winner = " Player 2";
@@ -340,7 +337,6 @@ public class ClassDesignP6
             System.out.print(" Player value : " + value + "\n");
         }
         System.out.print( " Total value for Player : " + totalValuePlayer + "\n");
-        System.out.print("\n");
         if (totalValuePlayer==21)
         {
             Winner = " Player 3";
@@ -431,7 +427,6 @@ public class ClassDesignP6
             System.out.print(" Player value : " + value + "\n");
         }
         System.out.print( " Total value for Player : " + totalValuePlayer + "\n");
-        System.out.print("\n");
         if (totalValuePlayer==21)
         {
             Winner = " Player 4";
@@ -522,7 +517,6 @@ public class ClassDesignP6
             System.out.print(" Player value : " + value + "\n");
         }
         System.out.print( " Total value for Player : " + totalValuePlayer + "\n");
-        System.out.print("\n");
         if (totalValuePlayer==21)
         {
             Winner = " Player 5";
