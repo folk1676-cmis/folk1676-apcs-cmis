@@ -4,18 +4,17 @@ public class Football
     private int playersonfield;
     public Football ()
     {
-        team = new String ("Manchester United");
+        team = "Manchester United";
         playersonfield = 10;
     }
     public Football (String team, int playersonfield)
     {
-        this.team = new String (team);
+        this.team = team;
         this.playersonfield = playersonfield;
     }
     public String toString ()
     {
-        String output = new String();
-        output = "Team: " + team + "\n" + "Players on field: " + playersonfield;
-        return output;
+        String result = String.format ( "Team: %s\n" + "Players: %d", team, playersonfield);
+        return result;
     }
 }

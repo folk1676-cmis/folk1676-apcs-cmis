@@ -5,9 +5,9 @@ public class Clock
     private int sec;
     public Clock()
     {
-        hr = 0;
-        min = 0;
-        sec = 0;
+        hr = 9;
+        min = 8;
+        sec = 7;
     } //end constructor Song
     public Clock (String name, double cost, String artist)
     {
@@ -18,7 +18,7 @@ public class Clock
     public String toString( )
     {
         String output = new String();
-        output = hr + "/n:" + min + "/n" + sec;
+        output = "0" + hr + ":" + "0" + min + ":" + "0" + sec;
         return output;
     }
 }//end class song

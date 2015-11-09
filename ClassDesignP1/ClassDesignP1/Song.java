@@ -6,14 +6,14 @@ public class Song
     public Song()
     {
         cost =0.99;
-        artist = new String ("Logic");
-        name = new String ("Young Jesus");
+        artist = "Logic";
+        name = "Young Jesus";
     } //end constructor Song
     public Song (String name, double cost, String artist)
     {
-        this.name = new String (name);
+        this.name = name;
         this.cost = cost;
-        this.artist = new String (artist);
+        this.artist = artist;
     }
     public String toString( )
     {

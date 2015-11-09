@@ -10,6 +10,7 @@ public class ClockDriver1
         int min = Integer.parseInt( inp2 );        
         String inp3 = JOptionPane.showInputDialog("Second: ");
         int sec = Integer.parseInt( inp3 );
-        System.out.println( hr + " hours " + min + " mins " + sec + " secs" );
+        System.out.println(otherClock);
+        System.out.println( "0" + hr + ":" + "0" + min + ":" + "0" + sec );
     }
 } //end class ClockDriver
