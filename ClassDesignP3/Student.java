@@ -13,8 +13,8 @@ public class Student
     } //end constructor Song
     public Student (String firstname, String lastname, int gradelevel, double gpa)
     {
-        this.firstname = new String (firstname);
-        this.lastname = new String (lastname);
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.gradelevel = gradelevel;
         this.gpa = gpa;
     }
