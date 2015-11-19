@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Song()
+comment1.params=
+comment1.target=int\ getYearReleased()
+comment2.params=Year
+comment2.target=void\ setYearReleased(int)
+comment3.params=name\ cost\ artist
+comment3.target=Song(java.lang.String,\ double,\ java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
