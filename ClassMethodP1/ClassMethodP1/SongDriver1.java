@@ -4,13 +4,15 @@ public class SongDriver1
     {
         Song otherSong = new Song ();
         Song thisSong = new Song("Demons", 0.99, "James Morrison");
-        System.out.println (thisSong);
-        System.out.println (otherSong);
-        
         thisSong.setYearReleased(2013);
         otherSong.setYearReleased(2015);
-        
+
+        System.out.println(thisSong);
+        System.out.print("Year: ");
         System.out.println(thisSong.getYearReleased());
-        System.out.println(otherSong.getYearReleased());
+        System.out.print("\n");
+        System.out.println(otherSong);
+        System.out.print("Year: ");
+        System.out.print(otherSong.getYearReleased());
     }
 } //end class MySongDriver
