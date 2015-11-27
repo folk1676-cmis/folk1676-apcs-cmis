@@ -3,26 +3,48 @@ public class Student
     private int gradelevel;
     private String firstname;
     private String lastname;
-    private double gpa;
+    private double eng;
+    private double math;
+    private double sci;
+    private double fa;
+    private double ss;
+    private double grades[] = new double[5];
+
     public Student()
     {
-        gradelevel =12;
         firstname = new String ("Jack");
         lastname = new String ("Smith");
-        gpa = 3.75;
-    } //end constructor Song
-    public Student (String firstname, String lastname, int gradelevel, double gpa)
+        gradelevel = 11;
+        for (int i = 0; i < grades.length; i++)
+        {
+            grades[i] = Math.random() * 4;
+        }
+    } 
+    public Student (String firstname, String lastname, int gradelevel, double eng, double math, double sci, double fa, double ss)
     {
         this.firstname = firstname;
         this.lastname = lastname;
         this.gradelevel = gradelevel;
-        this.gpa = gpa;
+        this.eng = eng;
+        this.math = math;
+        this.sci = sci;
+        this.fa = fa;
+        this.ss = ss;
+    }
+    public double calcGPA()
+    {
+        double totalGPA = 0;
+        for (int i = 0; i < grades.length; i++)
+        {
+            totalGPA = totalGPA + grades[i];
+        }
+        return totalGPA / grades.length;
     }
     public String toString( )
     {
         String output = new String();
-        output = "'s full name is " + firstname +" " +lastname + " and has a gpa of "  + 
-        gpa + " studying at grade "+ gradelevel +"." ;
+        output = String.format("firstname: %s, %s\n", %d
+                            firstname,lastname);
         return output;
     }
 }
