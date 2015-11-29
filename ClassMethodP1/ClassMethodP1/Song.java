@@ -1,36 +1,45 @@
-public class Song
+import javax.swing.JOptionPane;
+public class Song 
 {
-    private double cost;
     private String artist;
-    private String name;
-    private int YearReleased;
+    private String songName;
+    private int length;
+    private int year;
+    String username = JOptionPane.showInputDialog("Username: ");
+    String password = JOptionPane.showInputDialog("Password: ");
+    private String min;
+    private int seconds;
+    
     public Song()
     {
-        cost =0.99;
-        artist = "Logic";
-        name = "Young Jesus";
-        YearReleased = 2015;
-    } //end constructor Song
-    public int getYearReleased()
-    {
-        return YearReleased;
-    }
-    public void setYearReleased(int Year)
-    {
-        this.YearReleased = Year;
-    }
-    public Song (String name, double cost, String artist)
-    {
-        this.name = name;
-        this.cost = cost;
-        this.artist = artist;
+        artist = "James Morrison";
+        songName = "Demons";
+        length = 197;
     }
 
-    public String toString( )
+    public int getYearReleased()
+    {
+        return year;
+    }
+
+    public void setYearReleased(int year)
+    {
+        if( password.equals("amnotam1r") && username.equals("Folk"))
+        {
+            this.year = year;
+        }
+    }
+
+    public String convert()
+    {
+        min = (Integer.toString(length/60)) + " minutes " + (Integer.toString(length%60)) + " seconds.";
+        return min;
+    }
+
+    public String toString()
     {
         String output = new String();
-        output = "Name: " + name + "\nCost: " + cost + "\nArtist: " + 
-        artist;
+        output = "Artist: " + artist + "\n" + "Title: " + songName;
         return output;
     }
-}//end class song
+}

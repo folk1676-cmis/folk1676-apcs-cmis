@@ -12,8 +12,8 @@ public class Student
 
     public Student()
     {
-        firstname = new String ("Jack");
-        lastname = new String ("Smith");
+        firstname = new String ("Brandon");
+        lastname = new String ("Muller");
         gradelevel = 11;
         for (int i = 0; i < grades.length; i++)
         {
@@ -42,9 +42,8 @@ public class Student
     }
     public String toString( )
     {
-        String output = new String();
-        output = String.format("firstname: %s, %s\n", %d
-                            firstname,lastname);
+        String output = String.format(
+            "First Name: %s \n Last Name: %s \n Grade Level: %d \n GPA: %.2f \n", firstname, lastname, gradelevel, calcGPA());
         return output;
     }
 }
