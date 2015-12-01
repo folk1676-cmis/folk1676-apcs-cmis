@@ -24,7 +24,7 @@ public class Song
 
     public void setYearReleased(int year)
     {
-        if( password.equals("amnotam1r") && username.equals("Folk"))
+        if( password.equals("amnotam1r") && username.equals("folk1676"))
         {
             this.year = year;
         }
