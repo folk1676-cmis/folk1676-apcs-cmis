@@ -20,7 +20,7 @@ public class Student
             grades[i] = Math.random() * 4;
         }//randomize
     } 
-    
+
     public Student (String firstname, String lastname, int gradelevel, double eng, double math, double sci, double fa, double ss)
     {
         this.firstname = firstname;
@@ -32,21 +32,22 @@ public class Student
         this.fa = fa;
         this.ss = ss;
     }
-    
+
     public double calcGPA()
     {
         double totalGPA = 0;
         for (int i = 0; i < grades.length; i++)
         {
+            grades[i] = Math.random() * 4;
             totalGPA = totalGPA + grades[i];
         }
         return totalGPA / grades.length;
     }
-    
+
     public String toString()
     {
         String output = String.format(
-            "First Name: %s \nLast Name: %s \nGrade Level: %d \nGPA: %.2f \n", firstname, lastname, gradelevel, calcGPA());
+                "First Name: %s \nLast Name: %s \nGrade Level: %d \nGPA: %.2f \n", firstname, lastname, gradelevel, calcGPA());
         return output;
     }
 }

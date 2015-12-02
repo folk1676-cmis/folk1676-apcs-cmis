@@ -30,13 +30,24 @@ public class Student
         this.grades[4] = ss;
     }
 
+    public double calcGPA()
+    {
+        double totalGPA = 0;
+        for (int i = 0; i < grades.length; i++)
+        {
+            grades[i] = Math.random() * 4;
+            totalGPA = totalGPA + grades[i];
+        }
+        return totalGPA / grades.length;
+    }
+
     public String getGrade()
     {
         if (calcGPA() >= 4.00)
         {
             return "A";
         }
-        else if (calcGPA() > 3.00 && calcGPA() <= 4.00)
+        else if (calcGPA() > 3.00 && calcGPA() < 4.00)
         {
             return "B";
         }
@@ -53,7 +64,7 @@ public class Student
             return "F";
         }
     }
-    
+
     public Student (String firstname, String lastname, int gradelevel, double eng, double math, double sci, double fa, double ss)
     {
         this.firstname = firstname;
@@ -64,16 +75,6 @@ public class Student
         this.sci = sci;
         this.fa = fa;
         this.ss = ss;
-    }
-
-    public double calcGPA()
-    {
-        double totalGPA = 0;
-        for (int i = 0; i < grades.length; i++)
-        {
-            totalGPA = totalGPA + grades[i];
-        }
-        return totalGPA / grades.length;
     }
 
     public String toString( )
