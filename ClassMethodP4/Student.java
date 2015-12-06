@@ -36,7 +36,7 @@ public class Student
         for (int i = 0; i < grades.length; i++)
         {
             grades[i] = Math.random() * 4;
-            totalGPA = totalGPA + grades[i];
+            totalGPA = 0 + grades[i];
         }
         return totalGPA / grades.length;
     }
@@ -47,15 +47,15 @@ public class Student
         {
             return "A";
         }
-        else if (calcGPA() > 3.00 && calcGPA() < 4.00)
+        else if (calcGPA() > 3.00 && calcGPA() <= 4.00)
         {
             return "B";
         }
-        else if (calcGPA() > 2.00 && calcGPA() < 3.00)
+        else if (calcGPA() > 2.00 && calcGPA() <= 3.00)
         {
             return "C";
         }
-        else if (calcGPA() > 1.00 && calcGPA() < 2.00)
+        else if (calcGPA() > 1.00 && calcGPA() <= 2.00)
         {
             return "D";
         }
