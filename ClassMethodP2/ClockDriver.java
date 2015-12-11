@@ -2,7 +2,6 @@ import javax.swing.JOptionPane;
 public class ClockDriver {
     public static void main (String argvs [] )
     {
-
         String input = JOptionPane.showInputDialog( "Hour" );
         int hour = Integer.parseInt ( input );
         String input2 = JOptionPane.showInputDialog( "Minute" );
@@ -12,11 +11,11 @@ public class ClockDriver {
 
         Clock clock = new Clock(hour,minute,second);
         System.out.println ("Master Initial: "+ clock);
-        clock.setTime( (int)(Math.random()*24), (int)(Math.random()*60),(int)(Math.random()*60));
+        clock.setTime((int)(Math.random()*24), (int)(Math.random()*60),(int)(Math.random()*60));
 
         System.out.println ("Master Random Set: "+ clock);
         clock.convertDaylightSaving(hour);
 
         System.out.println ("Daylight Random Set: "+ clock);
     }
-} //end class MyPhoneDriver
+}
