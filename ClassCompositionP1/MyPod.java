@@ -8,7 +8,7 @@ public class MyPod
     {
         color = new String ("Black");
         memory = 64;
-        songs = new String[] {"Charlie Brown", " Marvin Gaye", " C"};
+        songs = new String[] {"Charlie Brown", ", Viva La Vida", ", The Scientist"};
     }
 
     public MyPod ( String color, int memory, String[] songs )
@@ -26,7 +26,7 @@ public class MyPod
             song += s;
         }
         String output = String.format(
-                "Color: %s \nMemory: %d \nSongs: %s", color, memory, song);
+                "Color: %s \nMemory: %dGB \nSongs: %s", color, memory, song);
         return output;
     }
 }
