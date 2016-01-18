@@ -1,0 +1,41 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-7-openjdk-amd64/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/home/cmis/folk1676-apcs-cmis/ClassCompositionP1
+-d
+/home/cmis/folk1676-apcs-cmis/ClassCompositionP1/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/home/cmis/folk1676-apcs-cmis/ClassCompositionP1/MyPodDriver.java
+<---- end of javadoc command ---->
+Loading source file /home/cmis/folk1676-apcs-cmis/ClassCompositionP1/MyPodDriver.java...
+/home/cmis/folk1676-apcs-cmis/ClassCompositionP1/MyPodDriver.java:7: error: illegal start of expression
+        MyPod carPod = new MyPod ("White", 64, []{"D", "E", "F"};
+                                               ^
+/home/cmis/folk1676-apcs-cmis/ClassCompositionP1/MyPodDriver.java:7: error: ';' expected
+        MyPod carPod = new MyPod ("White", 64, []{"D", "E", "F"};
+                                                ^
+/home/cmis/folk1676-apcs-cmis/ClassCompositionP1/MyPodDriver.java:7: error: not a statement
+        MyPod carPod = new MyPod ("White", 64, []{"D", "E", "F"};
+                                                  ^
+/home/cmis/folk1676-apcs-cmis/ClassCompositionP1/MyPodDriver.java:7: error: ';' expected
+        MyPod carPod = new MyPod ("White", 64, []{"D", "E", "F"};
+                                                     ^
+4 errors
