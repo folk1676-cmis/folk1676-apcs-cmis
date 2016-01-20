@@ -2,7 +2,8 @@ public class ClockDriver
 {
     public static void main ( String argvs [] )
     {
-        ClockStore ClockStore = new ClockStore();
-        System.out.println( ClockStore );
+        ClockStore a = new ClockStore();
+        System.out.println( a );
+        System.out.println("Clock #" + a.mostSeconds() + " has the most seconds.");
     }
 }

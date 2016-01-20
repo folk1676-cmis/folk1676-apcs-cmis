@@ -17,7 +17,7 @@ public class ClockStore
         {
             if ( clocksInStock[i].totalSeconds() > x )
             {
-                x = i;
+                x = i;//clocksInStock[i].totalSeconds();
             }
         }
         return x;
@@ -25,8 +25,13 @@ public class ClockStore
 
     public String toString()
     {
+        String a = "";
+        for ( Clock s : clocksInStock )
+        {
+            a += s;
+        }
         String output = String.format(
-                "A: %d", x);
+                "%s", a);
         return output;
     }
 }

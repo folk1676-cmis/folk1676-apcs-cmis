@@ -12,8 +12,8 @@ public class Student
 
     public Student()
     {
-        firstname = new String ("Brandon");
-        lastname = new String ("Muller");
+        firstname = new String ("Min");
+        lastname = new String ("Cho");
         gradelevel = 12;
         for (int i = 0; i < grades.length; i++)
         {
