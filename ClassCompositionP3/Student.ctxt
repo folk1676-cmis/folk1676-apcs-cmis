@@ -1,8 +1,16 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Student()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Student\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
-numComments=2
+comment1.params=firstname\ lastname\ gradelevel
+comment1.target=Student(java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=grades
+comment3.target=void\ setGPA(double[])
+comment4.params=
+comment4.target=double\ calcGPA()
+comment5.params=
+comment5.target=java.lang.String\ getGrade()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

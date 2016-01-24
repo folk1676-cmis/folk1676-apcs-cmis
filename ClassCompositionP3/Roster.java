@@ -1,33 +1,38 @@
-
-/**
- * Write a description of class Roster here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Roster
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Roster
-     */
+    private Student []studentList;
     public Roster()
     {
-        // initialise instance variables
-        x = 0;
+        studentList= new Student [3];
+        studentList[0] = new Student( "Luke ", "Rockhold ", 12 );
+        studentList[1] = new Student( "Connor ","McGregor ", 12 );
+        studentList[2] = new Student( "Dominick ", "Cruz ", 11);
+    }
+    
+    public String findStudentWithMaxGPA()
+    {
+        double gpaH=0;
+        String output ="";
+        for ( Student x : studentList) 
+        {
+            if ( x.calcGPA() >= gpaH )
+            {
+                gpaH = x.calcGPA();
+                output = x.getName();
+            }
+        }
+        return output;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public String toString( )
     {
-        // put your code here
-        return x + y;
+        String x = "";
+        for (Student i : studentList)
+        {
+            x += i;
+        }
+        String output = new String();
+        output =  x + "\n\n " + findStudentWithMaxGPA();
+        return output;
     }
 }
