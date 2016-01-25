@@ -11,7 +11,7 @@ public class MyPod
         memory = 64;
         playList.add( "Charlie Brown" );
         playList.add( "       Yellow" );
-        playList.add( "       A Sky Full of Stars" );
+        playList.add( "       Sky Full of Stars" );
         playList.add( "       Viva La Vida" );
         playList.add( "       The Scientist" );
         playList.add( "       Swallowed in the Sea" );
