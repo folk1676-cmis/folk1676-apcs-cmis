@@ -1,14 +1,8 @@
 public class RoosterDriver2
 {
-    private int x;
-
-    public RoosterDriver2()
+    public static void main( String[] args )
     {
-        x = 0;
-    }
-
-    public int sampleMethod(int y)
-    {
-        return x + y;
+        Rooster2 Student = new Rooster2();
+        System.out.println( Student );
     }
 }

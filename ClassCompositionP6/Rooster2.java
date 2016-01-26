@@ -32,6 +32,7 @@ public class Rooster2
         {
             x += y + "\n";
         }
-        String output = String.format(
+        String output = x;
+        return output;
     }
 }
