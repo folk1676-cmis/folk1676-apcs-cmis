@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-public class Rooster2
+public class Roster2
 {
     ArrayList<Student> myStudents = new ArrayList<Student>();
-    public Rooster2()
+    public Roster2()
     {
         Student x = new Student( "Min", "Cho", 11, 1.7, 1.0, 0.0, 2.3, 1.0 );
         Student y = new Student( "Sean", "Kim", 11, 3.0, 0.0, 2.7, 0.0, 0.0 );
@@ -21,7 +21,7 @@ public class Rooster2
     {
         for ( int shark = 0; shark < myStudents.size(); shark++ )
         {
-            if ( myStudents.get( shark ).equals( lastname ) );
+            if ( myStudents.get( shark ).lname().equals( lastname ) )
             {
                 myStudents.remove( shark );
                 shark--;

@@ -77,6 +77,11 @@ public class Student
         this.ss = ss;
     }
 
+    public String lname ()
+    {
+        return this.lastname;
+    }
+    
     public String toString( )
     {
         String output = String.format(

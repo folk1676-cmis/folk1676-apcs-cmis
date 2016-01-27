@@ -4,10 +4,10 @@ public class Roster
 
     public Roster()
     {
-        students[0] = new Student ("Finn", "Balor", 9, 1.0, 1.0, 1.0, 2.0, 3.0);
-        students[1] = new Student ("Luke", "Rockhold", 10, 2.0, 2.0, 2.0, 3.0, 4.0);
-        students[2] = new Student ("Robert", "Lewandowski", 11, 3.0, 3.0, 3.0, 4.0, 4.0);
-        //students[3] = new Student ("Hugo", "Padioleau", 12, 4.0, 4.0, 3.0, 4.0, 3.0);
+        //students[0] = new Student ("Finn", "Balor", 9, 1.0, 1.0, 1.0, 2.0, 3.0);
+        students[0] = new Student ("Luke", "Rockhold", 10, 2.0, 2.0, 2.0, 3.0, 4.0);
+        students[1] = new Student ("Robert", "Lewandowski", 11, 3.0, 3.0, 3.0, 4.0, 4.0);
+        students[2] = new Student ("Hugo", "Padioleau", 12, 4.0, 4.0, 3.0, 4.0, 3.0);
     }
 
     public String findMaxGPA()
