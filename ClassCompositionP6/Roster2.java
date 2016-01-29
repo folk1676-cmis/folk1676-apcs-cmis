@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class Roster2
 {
     ArrayList<Student> myStudents = new ArrayList<Student>();
-    public Roster2()
+    public Roster2( )
     {
         Student x = new Student( "Min", "Cho", 11, 1.7, 1.0, 0.0, 2.3, 1.0 );
         Student y = new Student( "Sean", "Kim", 11, 3.0, 0.0, 2.7, 0.0, 0.0 );
