@@ -1,4 +1,10 @@
 #BlueJ class context
-comment0.params=args
-comment0.target=void\ main(java.lang.String[])
-numComments=1
+comment0.params=
+comment0.target=JukeBox()
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=MySong\ randomSong()
+comment3.params=rating
+comment3.target=java.util.ArrayList\ playSongofRating(int)
+numComments=4
