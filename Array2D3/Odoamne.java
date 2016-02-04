@@ -32,7 +32,7 @@ public class Odoamne
             {
                 System.out.print( odo[row][col] + "\t" );
             }
-            System.out.println();
+            System.out.println( "\n" );
         }
     }
 }
