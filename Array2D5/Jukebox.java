@@ -1,9 +1,9 @@
 import java.util.ArrayList;
-public class JukeBox
+public class Jukebox
 {
     MySong[][] songList = new MySong[3][4];
 
-    public JukeBox()
+    public Jukebox()
     {
         songList[0][0] = new MySong( "Jet Airliner", 5 );
         songList[0][1] = new MySong( "Slide", 4 );
