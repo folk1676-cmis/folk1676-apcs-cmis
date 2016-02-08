@@ -4,62 +4,78 @@ public class Swapper
     {
         int rowpro = 0; // product of row
         int colpro = 0; // product of columns
+        int rowprotwo = 0;
+        int colprotwo = 0;
         int[][] grid = new int[][] {{9, 0, 2, 5, 0, 9, 0, 5, 8, 5},
-                                    {4, 8, 1, 7, 0, 5, 3, 6, 2, 0},
-                                    {7, 7, 5, 6, 0, 5, 6, 6, 4, 0},
-                                    {5, 1, 6, 2, 2, 2, 0, 9, 1, 9},
-                                    {0, 7, 8, 9, 0, 7, 4, 3, 8, 6},
-                                    {1, 0, 5, 6, 3, 2, 9, 3, 5, 3},
-                                    {5, 3, 1, 4, 9, 9, 1, 3, 4, 8},
-                                    {5, 6, 9, 9, 7, 8, 7, 3, 9, 3},
-                                    {1, 0, 4, 8, 3, 1, 0, 2, 1, 5},
-                                    {1, 7, 3, 6, 3, 7, 8, 3, 3, 6}};
+                {4, 8, 1, 7, 0, 5, 3, 6, 2, 0},
+                {7, 7, 5, 6, 0, 5, 6, 6, 4, 0},
+                {5, 1, 6, 2, 2, 2, 0, 9, 1, 9},
+                {0, 7, 8, 9, 0, 7, 4, 3, 8, 6},
+                {1, 0, 5, 6, 3, 2, 9, 3, 5, 3},
+                {5, 3, 1, 4, 9, 9, 1, 3, 4, 8},
+                {5, 6, 9, 9, 7, 8, 7, 3, 9, 3},
+                {1, 0, 4, 8, 3, 1, 0, 2, 1, 5},
+                {1, 7, 3, 6, 3, 7, 8, 3, 3, 6}};
 
-        for( int row = 0; row < grid.length; row++ ) //loop for rows
+        for(int row = 0; row < grid.length; row++)
+        {
+            for(int col = 0; col < grid[0].length; col++)
+            {
+                if(grid[row][col] != 0)
+                {
+                    rowpro *= grid[row][col];
+                    if( rowpro > rowprotwo )
+                    {
+                        rowprotwo = rowpro;
+                        colprotwo = col - 2;
+                    }
+                }
+            }
+        }
+
+        for( int row = 0; row < grid.length; row++ ) // for highest row product
+        {
+            //int rowpro = 0;
+            for( int col = 0; col < grid[0].length; col++ ) // begin for loop
+            {
+                rowpro += grid[row][col];
+            } // end for loop
+            // System.out.println( rowpro ); // check the product
+        } 
+        // System.out.println( "\n" );
+        for( int col = 0; col < grid[0].length; col++ ) // for highest column product
+        {
+            //int colpro = 0;
+            for( int row = 0; row < grid.length; row++ ) // begin for loop
+            {
+                colpro += grid[row][col];
+            } // end for loop
+            // System.out.println( colpro ); // check the product
+        }        
+        // value is 9
+
+        for( int row = 0; row < grid.length; row++ )
         {
             for( int col = 0; col < grid[0].length; col++ )
             {
-                if( grid[row][col] == 0 ) //change 0 to 1 so when multiply doesn't affect
+                if( grid[row][col] == 0 )
                 {
-                    grid[row][col] = 1;
-                } //end if statement
-                grid[row][col] = grid[row][row] * grid[row][row];
-                if( grid[row][col] > rowpro )
-                {
-                    rowpro = grid[row][col];
+                    grid[row][col] = 9;
                 }
-            } //end for loop
-        } //end for loop
+                else if( grid[row][col] == 9 )
+                {
+                    grid[row][col] = 0;
+                }
+            }
+        }
 
-        for( int col = 0; col < grid[0].length; col++ ) //loop for columns
+        for( int[] row : grid ) // print out array
         {
-            for( int row = 0; row < grid.length; row++ ) //begin for loop
+            for( int col : row )
             {
-                if( grid[row][col] == 0 ) //change 0 to 1 so when multiply doesn't affect
-                {
-                    grid[row][col] = 1;
-                }
-                grid[row][col] = grid[col][col] * grid[col][col];
-                if( grid[row][col] > colpro )
-                {
-                    colpro = grid[row][col];
-                } //end if statement
-            } //end for loop
-        } //end for loop
-
-        for( int row = 0; row < grid.length; row++ ) //begin for loop
-        {
-            for( int col = 0; col < grid[0].length; col++ ) //begin for loop
-            {
-                if( grid[row][col] == grid[rowpro][colpro] )
-                {
-                    if( grid[row][col] == 1 )
-                    {
-                        grid[row][col] = grid[rowpro][colpro];
-                    }
-                }
-                System.out.println( grid[row][col] );
-            } //end for loop
-        } //end for loop
+                System.out.print( col + "\t" );
+            }
+            System.out.println();
+        }  
     }
 }
