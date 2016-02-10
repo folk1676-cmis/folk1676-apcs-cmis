@@ -21,7 +21,7 @@ public class Rooster2
     {
         for ( int shark = 0; shark < myStudents.size(); shark++ )
         {
-            if ( myStudents.get( shark ).equals( lastname ) );
+            if ( myStudents.get( shark ).equals( lastname ) )
             {
                 myStudents.remove( shark );
                 shark--;

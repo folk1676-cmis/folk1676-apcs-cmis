@@ -2,7 +2,10 @@ import java.util.ArrayList;
 public class Trail
 {
     ArrayList<Integer> markers = new ArrayList<Integer>();
-    int elevation;
+    int sum = 0;
+    int sumtwo = 0;
+    int sumthree = 0;
+
     public Trail()
     {
         markers.add( 100 );
@@ -22,7 +25,7 @@ public class Trail
 
     public Trail(ArrayList<Integer> markers )
     {
-        this.markers=markers;
+        this.markers = markers;
     } 
 
     public void addMarker(int marker)
@@ -31,52 +34,53 @@ public class Trail
     }
 
     public int getLength()
-
     {
-        int sum=0;
-        for(Integer x: markers)
-        {  sum += x;
+        for( int i = 0; i < markers.size(); i++ )
+        {
+            sum += markers.get( i );
         }
         return sum;
     }
 
     public boolean isLevelTrailSegment( int begin, int end )
-    {
-        boolean check = false;
-        if (markers.get(begin)==markers.get(end))
+    { 
+        boolean level = true;
+        for( int i = 0; i < markers.size(); i++ )
         {
-            check = true;
-            for (int i=begin;i<end;i++)
+            if( sumtwo == markers.get( i ) - markers.get( i-1 ))
             {
-                if (i > 0 && Math.abs(markers.get(i)-markers.get(i-1))>10)
-                {
-                    check=false;
-                }
+                level = false;
             }
         }
-        if (check)
-        {
-            return true;
-        }
-        else 
+        if( begin != end || level == false )
         {
             return false;
         }
-    }
-
-    public boolean isDifficult(int begin, int end)
-    {
-        elevation = 0;
-        for(int i=begin;i<end;i++)
-        {
-            if ( i > 0&& ( markers.get(i) - markers.get(i-1)) > 0 )
-            {
-                elevation += ( markers.get(i) -markers.get(i-1) );
-            }
-        }
-        if ( !isLevelTrailSegment(begin, end) && elevation > 100 )
+        else
         {
             return true;
+        }
+    }
+
+    public boolean isDifficult( int begin, int end )
+    {
+        for( int i = 0; begin < end; i++ )
+        {
+            if( markers.get( i ) - markers.get( i-1 ) > 0 )
+            {
+                sumthree += markers.get( i ) - markers.get( i-1 );
+            }
+        }
+        if( isLevelTrailSegment( begin, end ))
+        {
+            if( sumthree > 100 )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         else
         {
@@ -84,21 +88,20 @@ public class Trail
         }
     }
 
-    public String toString()
+    public String toString ( )
     {
-        String output = "Index\tElevation\n" ;
-        int i = 0;
-
-        for(Integer x: markers)
-        {  
-            i++;
-            output += i+"\t"+x+"\n";
+        String output = "Index\tElevation\n";
+        int x = 0;
+        for ( Integer y : markers )
+        {
+            x++;
+            output += x+"\t"+"x"+"\n";
         }
-
-        output += "Total Distance of Trail is : "+getLength()+"\n";
-        output += "Trail Level: " +  isLevelTrailSegment( 0,markers.size()-1)+"\n";
-        output += "Trail Difficult: " +         isDifficult(0,markers.size()-1)+"\n";
-        output += "Net Elevation : " + elevation+"\n";
+        output += "Total Distance: " + getLength();
+        output += isLevelTrailSegment( 0, markers.size()-1 );
+        output += isDifficult( 0, markers.size()-1 );
+        output += sumthree;
+        
         return output;
     }
 }
