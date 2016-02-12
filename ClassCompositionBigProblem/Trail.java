@@ -47,9 +47,12 @@ public class Trail
         boolean level = true;
         for( int i = 0; i < markers.size(); i++ )
         {
-            if( sumtwo == markers.get( i ) - markers.get( i-1 ))
+            if( i != 0 )
             {
-                level = false;
+                if( sumtwo == markers.get( i ) - markers.get( i-1 ))
+                {
+                    level = false;
+                }
             }
         }
         if( begin != end || level == false )
@@ -66,9 +69,12 @@ public class Trail
     {
         for( int i = 0; begin < end; i++ )
         {
-            if( markers.get( i ) - markers.get( i-1 ) > 0 )
+            if( i != 0 )
             {
-                sumthree += markers.get( i ) - markers.get( i-1 );
+                if( markers.get( i ) - markers.get( i-1 ) > 0 )
+                {
+                    sumthree += markers.get( i ) - markers.get( i-1 );
+                }
             }
         }
         if( isLevelTrailSegment( begin, end ))
@@ -100,8 +106,7 @@ public class Trail
         output += "Total Distance: " + getLength();
         output += isLevelTrailSegment( 0, markers.size()-1 );
         output += isDifficult( 0, markers.size()-1 );
-        output += sumthree;
-        
+        output += sumthree;        
         return output;
     }
 }

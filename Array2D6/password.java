@@ -17,7 +17,7 @@ public class password
             if( x >= 0 )
             {
                 System.out.println( "Please enter a valid password" );
-                z = JOptionPane.showInputDialog( "Lastname: " );
+                z = JOptionPane.showInputDialog( "Password: " );
                 // System.out.println( "Please enter a valid password" );
             }
             else
