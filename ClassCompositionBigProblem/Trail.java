@@ -4,7 +4,7 @@ public class Trail
     ArrayList<Integer> markers = new ArrayList<Integer>();
     int sum = 0;
     int sumtwo = 0;
-    int sumthree = 0;
+    int sumthree;
 
     public Trail()
     {
@@ -65,48 +65,35 @@ public class Trail
         }
     }
 
-    public boolean isDifficult( int begin, int end )
+    public boolean isDifficult(int begin, int end)
     {
-        for( int i = 0; begin < end; i++ )
+        sumthree = 0;
+        for (int i=begin;i<end;i++)
         {
-            if( i != 0 )
+            if (i > 0 && (markers.get(i) - markers.get(i-1)) > 0)
             {
-                if( markers.get( i ) - markers.get( i-1 ) > 0 )
-                {
-                    sumthree += markers.get( i ) - markers.get( i-1 );
-                }
+                sumthree += (markers.get(i)-markers.get(i-1));
             }
         }
-        if( isLevelTrailSegment( begin, end ))
-        {
-            if( sumthree > 100 )
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        else
-        {
+        if (!isLevelTrailSegment(begin, end) && sumthree>100)
+            return true;
+
+        else 
             return false;
-        }
     }
 
-    public String toString ( )
+    public String toString( )
     {
-        String output = "Index\tElevation\n";
-        int x = 0;
-        for ( Integer y : markers )
-        {
-            x++;
-            output += x+"\t"+"x"+"\n";
+        String output ="Index\tElevation\n" ;
+        int i=0;
+        for (Integer x: markers)
+        {   i++;
+            output += i+"\t"+x+"\n";
         }
-        output += "Total Distance: " + getLength();
-        output += isLevelTrailSegment( 0, markers.size()-1 );
-        output += isDifficult( 0, markers.size()-1 );
-        output += sumthree;        
+        output += "Total Distance of Trail is : "+getLength()+"\n";
+        output += "Trail Level: " +  isLevelTrailSegment( 0,markers.size()-1)+"\n";
+        output += "Trail Difficult: " +         isDifficult(0,markers.size()-1)+"\n";
+        output += "Net Elevation : "+ sumthree +"\n";
         return output;
     }
 }
