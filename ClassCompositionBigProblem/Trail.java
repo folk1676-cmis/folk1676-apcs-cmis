@@ -14,11 +14,11 @@ public class Trail
         markers.add( 120 );
         markers.add( 90 );
         markers.add( 80 );
-        markers.add( 50 );
-        markers.add( 75 );
-        markers.add( 75 );
+        markers.add( 150 );
+        markers.add( 175 );
+        markers.add( 275 );
         markers.add( 70 );
-        markers.add( 80 );
+        markers.add( 180 );
         markers.add( 90 );
         markers.add( 100 );
     }
@@ -75,7 +75,7 @@ public class Trail
                 sumthree += (markers.get(i)-markers.get(i-1));
             }
         }
-        if (!isLevelTrailSegment(begin, end) && sumthree>100)
+        if (!isLevelTrailSegment(begin, end) && sumthree > 100)
             return true;
 
         else 
@@ -84,16 +84,16 @@ public class Trail
 
     public String toString( )
     {
-        String output ="Index\tElevation\n" ;
-        int i=0;
-        for (Integer x: markers)
+        String output = "Index\tElevation\n" ;
+        int i = 0;
+        for (Integer x : markers)
         {   i++;
-            output += i+"\t"+x+"\n";
+            output += i + "\t" + x + "\n";
         }
-        output += "Total Distance of Trail is : "+getLength()+"\n";
-        output += "Trail Level: " +  isLevelTrailSegment( 0,markers.size()-1)+"\n";
-        output += "Trail Difficult: " +         isDifficult(0,markers.size()-1)+"\n";
-        output += "Net Elevation : "+ sumthree +"\n";
+        output += "Total Distance of Trail: " + getLength()+"\n";
+        output += "Trail Level: " +  isLevelTrailSegment(0,markers.size() - 1)+"\n";
+        output += "Trail Difficult: " + isDifficult(0,markers.size() - 1)+"\n";
+        output += "Net Elevation: " + sumthree +"\n";
         return output;
     }
 }
