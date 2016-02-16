@@ -34,7 +34,7 @@ public class Jukebox
 
     public MySong randomSong()
     {
-        return songList[ (int)(Math.random()) * 3 ][ (int)(Math.random()) * 4 ];
+        return songList[ (int)(Math.random()) * songList.length ][ (int)(Math.random()) * songList[0].length ];
     }
 
     public ArrayList<MySong> playSongofRating (int rating)

@@ -17,7 +17,7 @@ public class password
             if( x >= 0 ) // only works if it's not the same
             {
                 System.out.println( "Please enter a valid password" ); // prints out only if password is invalid
-                z = JOptionPane.showInputDialog( "Password: " );
+                z = JOptionPane.showInputDialog( "Password: " ).toLowerCase();
                 // System.out.println( "Please enter a valid password" );
             }
             else
