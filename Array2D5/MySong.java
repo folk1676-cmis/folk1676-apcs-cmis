@@ -6,7 +6,7 @@ public class MySong
     public MySong()
     {
         name = "Love Yourself";
-        rating = 5;
+        rating = 4;
     }
     
     public MySong( String name, int rating )

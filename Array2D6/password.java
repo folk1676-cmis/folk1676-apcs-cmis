@@ -3,26 +3,26 @@ public class password
 {
     public static void main ( String[] args )
     {
-        String lname = JOptionPane.showInputDialog( "Lastname: " );
-        String pass = JOptionPane.showInputDialog( "Password: " );
+        String uname = JOptionPane.showInputDialog( "Username: " ); // ask for username input
+        String pass = JOptionPane.showInputDialog( "Password: " ); // ask for password input
 
-        int x = 0;     
+        int x = 0; // comparing variable
 
-        String y = lname.toLowerCase();
-        String z = pass.toLowerCase();
+        String y = uname.toLowerCase(); // lowercase
+        String z = pass.toLowerCase(); // lowercase
 
-        while( x >= 0 )
+        while( x >= 0 ) // while loop for looping
         {
-            x = z.indexOf( y );
-            if( x >= 0 )
+            x = z.indexOf( y ); // x is a new value now and compare the password to the username
+            if( x >= 0 ) // only works if it's not the same
             {
-                System.out.println( "Please enter a valid password" );
+                System.out.println( "Please enter a valid password" ); // prints out only if password is invalid
                 z = JOptionPane.showInputDialog( "Password: " );
                 // System.out.println( "Please enter a valid password" );
             }
             else
             {
-                System.out.println( "The password is valid." );
+                System.out.println( "The password is valid." ); // meets criteria
             }
         }
     }
