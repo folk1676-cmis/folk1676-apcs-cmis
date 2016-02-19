@@ -7,6 +7,6 @@ public class AsteroidMan extends SuperHero
     
     public String motto()
     {
-        return "A self-proclaimed SuperHero that is Actually Just An Astronaut";
+        return "He shoots asteroids down to protect the Earth";
     }
 }
