@@ -7,8 +7,8 @@ public class JarvanIV extends SuperHero
     
     public JarvanIV( String setSuitColor, boolean setCape )
     {
-        this.setSuitColor = setSuitColor;
-        this.setCape = setCape;
+        setSuitColor("Yellow");
+        setCape(false);
     }
     
     public String motto()

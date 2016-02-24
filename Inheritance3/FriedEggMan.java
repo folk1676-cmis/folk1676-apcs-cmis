@@ -7,6 +7,6 @@ public class FriedEggMan extends SuperHero
     
     public String motto()
     {
-        return "Makes the best sunny side up eggs in the world";
+        return "Fries Eggs";
     }
 }

@@ -2,7 +2,6 @@ public abstract class SuperHero
    {
    private String suitColor;
    private boolean hasCape;
-
    
    public SuperHero()
       {
