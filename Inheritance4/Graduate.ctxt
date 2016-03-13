@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=name\ major\ units
+comment0.target=Graduate(java.lang.String,\ java.lang.String,\ int)
+comment1.params=units
+comment1.target=int\ calculateTuition(int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3
