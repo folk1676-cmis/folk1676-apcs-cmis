@@ -7,6 +7,11 @@ public class FriedEggMan extends SuperHero
 
     public String motto()
     {
-        return "Fries Eggs";
+        return "'EggMan'";
+    }
+
+    public String toString()
+    {
+        return super.toString() + "\t" + motto();
     }
 }

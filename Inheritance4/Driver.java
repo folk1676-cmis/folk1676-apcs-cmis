@@ -3,12 +3,12 @@ public class Driver
 {
     public static void main(String[] args)
     {
-        UnderGraduate ug1 = new UnderGraduate("Nhat", "Agriculture", 5);
-        UnderGraduate ug2 = new UnderGraduate("Yang", "Business", 6);
-        Graduate g1 = new Graduate("Rashid", "Computer Science", 7);
-        Graduate g2 = new Graduate("Amir", "Petroleum Engineering", 8);
-        PostGraduate ps1 = new PostGraduate("Paul", "Physical Fitness", 9);
-        PostGraduate ps2 = new PostGraduate("Lee", "Medical", 10);
+        UnderGraduate ug1 = new UnderGraduate("Nhat", "Agriculture", 120);
+        UnderGraduate ug2 = new UnderGraduate("Yang", "Business", 120);
+        Graduate g1 = new Graduate("Rashid", "Computer Science", 45);
+        Graduate g2 = new Graduate("Amir", "Petroleum Engineering", 45);
+        PostGraduate ps1 = new PostGraduate("Paul", "Physical Fitness", 90);
+        PostGraduate ps2 = new PostGraduate("Lee", "Medical", 90);
 
         ArrayList<Student> allStudents = new ArrayList<Student>();
         allStudents.add(ug1);

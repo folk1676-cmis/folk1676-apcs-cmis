@@ -1,3 +1,20 @@
 #BlueJ package file
-#Mon Mar 14 09:20:38 ICT 2016
+objectbench.height=76
+objectbench.width=686
+package.editor.height=400
+package.editor.width=560
+package.editor.x=301
+package.editor.y=173
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+target1.height=50
+target1.name=MyCar
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=70
+target1.y=10

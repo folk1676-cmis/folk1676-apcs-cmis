@@ -7,6 +7,11 @@ public class AsteroidMan extends SuperHero
 
     public String motto()
     {
-        return "An Astronaut";
+        return "'SpaceMan'";
+    }
+
+    public String toString()
+    {
+        return super.toString() + "\t" + motto();
     }
 }

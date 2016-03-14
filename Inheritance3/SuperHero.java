@@ -41,5 +41,10 @@ public abstract class SuperHero
     } // end method setName
 
     public abstract String motto();   
+    
+    public String toString()
+    {
+        return "" + name + "\t" + suitColor + "\t" + hasCape;
+    }
 
 } // end abstract class SuperHero

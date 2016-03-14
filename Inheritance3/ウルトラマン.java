@@ -7,6 +7,11 @@ public class ウルトラマン extends SuperHero
 
     public String motto()
     {
-        return "禁じられた言葉";
+        return "'禁じられた言葉'";
+    }
+
+    public String toString()
+    {
+        return super.toString() + "\t" + motto();
     }
 }

@@ -3,4 +3,6 @@ comment0.params=
 comment0.target=\u30A6\u30EB\u30C8\u30E9\u30DE\u30F3()
 comment1.params=
 comment1.target=java.lang.String\ motto()
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3
