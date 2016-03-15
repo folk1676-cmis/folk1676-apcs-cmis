@@ -1,9 +1,5 @@
 public class UnderGraduate extends Student
 {
-    private String firstName;
-    private String major;
-    private int units;
-
     public UnderGraduate(String firstName, String major, int units)
     {
         super(firstName, major, units);
@@ -16,7 +12,7 @@ public class UnderGraduate extends Student
     
     public String toString()
     {
-        return super.toString();
+        return super.toString() + calculateTuition(getUnits());
     }
 
 }

@@ -46,7 +46,7 @@ public abstract class Student
     public String toString()
     {
         String output = new String("");
-        output = "\nName: " + name + "\nMajor: " + major + "\nUnits: " + units + "\n";
+        output = "\n\nName: " + name + "\nMajor: " + major + "\nUnits: " + units + "\nTuition: $";
         return output;
     }
 }

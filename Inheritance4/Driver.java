@@ -5,10 +5,10 @@ public class Driver
     {
         UnderGraduate ug1 = new UnderGraduate("Nhat", "Agriculture", 120);
         UnderGraduate ug2 = new UnderGraduate("Yang", "Business", 120);
-        Graduate g1 = new Graduate("Rashid", "Computer Science", 45);
-        Graduate g2 = new Graduate("Amir", "Petroleum Engineering", 45);
-        PostGraduate ps1 = new PostGraduate("Paul", "Physical Fitness", 90);
-        PostGraduate ps2 = new PostGraduate("Lee", "Medical", 90);
+        Graduate g1 = new Graduate("Rashid", "Computer Science", 90);
+        Graduate g2 = new Graduate("Amir", "Petroleum Engineering", 90);
+        PostGraduate ps1 = new PostGraduate("Paul", "Physical Fitness", 60);
+        PostGraduate ps2 = new PostGraduate("Lee", "Medical", 60);
 
         ArrayList<Student> allStudents = new ArrayList<Student>();
         allStudents.add(ug1);
@@ -36,6 +36,5 @@ public class Driver
             }
             System.out.println();
         }
-
     }
 }

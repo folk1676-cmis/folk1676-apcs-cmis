@@ -16,7 +16,7 @@ public class PostGraduate extends Student
     
     public String toString()
     {
-        return super.toString();
+        return super.toString() + calculateTuition(getUnits());
     }
 
 }
