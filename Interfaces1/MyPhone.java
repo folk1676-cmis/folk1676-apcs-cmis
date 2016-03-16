@@ -1,33 +1,18 @@
-
-/**
- * Write a description of class MyPhone here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MyPhone
+public class MyPhone extends MyDevice 
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private String name;
+    private boolean mint;
 
-    /**
-     * Constructor for objects of class MyPhone
-     */
-    public MyPhone()
+    public  MyPhone (int memory, String color, String name, boolean mint)
     {
-        // initialise instance variables
-        x = 0;
+        super( memory,color );
+        this.name = name;
+        this.mint = mint;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public String toString()
     {
-        // put your code here
-        return x + y;
+        return super.toString() +
+        String.format("\nModel: %s\nNew? %s" ,name, mint);
     }
 }

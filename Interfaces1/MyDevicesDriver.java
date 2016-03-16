@@ -1,33 +1,19 @@
-
-/**
- * Write a description of class MyDevicesDriver here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MyDevicesDriver
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class MyDevicesDriver
-     */
-    public MyDevicesDriver()
+import java.util.ArrayList;
+public class MyDevicesDriver     {
+    public static void main (String argvs [] )
     {
-        // initialise instance variables
-        x = 0;
-    }
+        ArrayList<Connectable> dioud = new ArrayList<Connectable>(); 
+        dioud.add(new MyPhone (64, "Black", "iPhone", true ));
+        dioud.add(new MyPod (32, "Black", "iPod" ));
+        dioud.add(new MyCar (420, "Red", 400000 ));
+        for (Connectable x : dioud)
+        {
+            System.out.println ("" + x.getClass() + x + "\n" );
+        }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        for (Connectable x : dioud)
+        {
+            x.connectToBluetooth();
+        }
     }
 }

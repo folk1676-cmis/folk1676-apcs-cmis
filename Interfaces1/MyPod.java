@@ -1,33 +1,26 @@
-
-/**
- * Write a description of class MyPod here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MyPod
+public class MyPod extends MyDevice implements Discountable
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private String name;
 
-    /**
-     * Constructor for objects of class MyPod
-     */
-    public MyPod()
+    public  MyPod ( int memory, String color, String name )
     {
-        // initialise instance variables
-        x = 0;
+        super( memory,color );
+        this.name = name;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public boolean discount()
     {
-        // put your code here
-        return x + y;
+        return true;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public String toString()
+    {
+        return super.toString() +
+        String.format("\nModel: %s" ,name);
     }
 }

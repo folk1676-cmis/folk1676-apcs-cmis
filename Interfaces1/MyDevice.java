@@ -1,33 +1,26 @@
-
-/**
- * Write a description of class MyDevice here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MyDevice
+import java.util.ArrayList;
+public abstract class MyDevice implements Connectable
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class MyDevice
-     */
+    private int memory;
+    private String color;
     public MyDevice()
     {
-        // initialise instance variables
-        x = 0;
+        memory = 8;
+        color = new String ("Black");
+    } //end constructor  
+    public MyDevice( int memory, String color)
+    {
+        this.memory = memory;
+        this.color = color;
+    } //end constructor  
+    public void connectToBluetooth()
+    {
+       System.out.println("Bluetooth Connected");
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public String toString()
     {
-        // put your code here
-        return x + y;
+        String output ="\nMemory: " + memory + "GB" + "\nColor: "+ color; 
+        return output;
     }
 }

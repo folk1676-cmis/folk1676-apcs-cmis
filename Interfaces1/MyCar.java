@@ -1,33 +1,25 @@
-
-/**
- * Write a description of class MyCar here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MyCar
+public class MyCar extends Vehicle implements Connectable, Discountable
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int price;
 
-    /**
-     * Constructor for objects of class MyCar
-     */
-    public MyCar()
+    public MyCar( int horsepower, String color, int price )
     {
-        // initialise instance variables
-        x = 0;
+        super( horsepower, color );
+        this.price = price;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public boolean discount()
     {
-        // put your code here
-        return x + y;
+        return true;
+    }
+
+    public void connectToBluetooth()
+    {
+        System.out.print("Bluetooth Connected");
+    }
+
+    public String toString()
+    {
+        return super.toString() + "\nPrice: $" + price + "\n";
     }
 }
