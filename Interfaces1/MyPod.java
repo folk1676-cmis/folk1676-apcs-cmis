@@ -4,7 +4,7 @@ public class MyPod extends MyDevice implements Discountable
 
     public  MyPod ( int memory, String color, String name )
     {
-        super( memory,color );
+        super( memory, color );
         this.name = name;
     }
 

@@ -8,7 +8,7 @@ public class MyDevicesDriver     {
         dioud.add(new MyCar (420, "Red", 400000 ));
         for (Connectable x : dioud)
         {
-            System.out.println ("" + x.getClass() + x + "\n" );
+            System.out.println("" + x.getClass() + x + "\n" );
         }
 
         for (Connectable x : dioud)

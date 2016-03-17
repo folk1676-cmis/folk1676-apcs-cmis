@@ -17,5 +17,5 @@ public abstract class TV
         this.tvON = tvON;
     }
     
-    public abstract String type();
+    public abstract String tvType();
 }
