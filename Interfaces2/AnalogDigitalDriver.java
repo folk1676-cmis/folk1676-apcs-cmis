@@ -1,15 +1,3 @@
-// a. Use a for-each loop to print the type of TV and whether or not the TV is on.
-// 
-// b. Use a regular for loop to turn on each TV.
-// 
-// c. Use a separate for-each loop to print the type of TV and whether or not it is
-// 
-// on.
-// 
-// d. Print the result of calling the “rotateRabbitEars()” method for a BWTV.
-// 
-// e. Print the result of calling the “connectHDMI()” method for a HDTV.
-
 import java.util.ArrayList;
 public class AnalogDigitalDriver
 {
