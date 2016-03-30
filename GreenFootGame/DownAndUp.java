@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class UpAndDown extends Enemy
+public class DownAndUp extends Enemy
 {
     public void act()
     {      
@@ -14,9 +14,9 @@ public class UpAndDown extends Enemy
         turnAtWall();
     } 
 
-    public UpAndDown()
+    public DownAndUp()
     {
-        setRotation(90);
+        setRotation(-90);
     }
 
     public void turnAtWall()

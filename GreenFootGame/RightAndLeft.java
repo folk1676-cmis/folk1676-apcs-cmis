@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class UpAndDown here.
+ * Write a description of class RightAndLeft here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class UpAndDown extends Enemy
+public class RightAndLeft extends Enemy
 {
     public void act()
     {      
@@ -14,11 +14,11 @@ public class UpAndDown extends Enemy
         turnAtWall();
     } 
 
-    public UpAndDown()
+    public RightAndLeft()
     {
-        setRotation(90);
+        setRotation(180);
     }
-
+    
     public void turnAtWall()
     {
         if ( isTouching(Wall.class) )
