@@ -12,6 +12,7 @@ public class LeftAndRight extends Enemy
     {      
         move(4);
         turnAtWall();
+        die();
     } 
 
     public void turnAtWall()
@@ -20,5 +21,18 @@ public class LeftAndRight extends Enemy
         {
             turn(180);
         }    
+    }
+
+    public void die()
+    {
+        Actor crab;
+        crab = getOneObjectAtOffset(0, 0, Player.class);
+        if(crab != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(crab);
+            Greenfoot.setWorld(new GameOver());
+        }
     }
 }

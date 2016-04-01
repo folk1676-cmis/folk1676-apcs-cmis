@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=RightAndLeft()
 comment3.params=
 comment3.target=void\ turnAtWall()
-numComments=4
+comment4.params=
+comment4.target=void\ die()
+numComments=5

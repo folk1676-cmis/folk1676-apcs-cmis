@@ -1,23 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class UpAndDown here.
+ * Write a description of class SlowUpAndDown here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class DownAndUp extends Enemy
+public class SlowUpAndDown extends Enemy
 {
     public void act()
     {      
-        move(4);
+        move(2);
         turnAtWall();
         die();
     } 
 
-    public DownAndUp()
+    public SlowUpAndDown()
     {
-        setRotation(-90);
+        setRotation(90);
     }
 
     public void turnAtWall()
