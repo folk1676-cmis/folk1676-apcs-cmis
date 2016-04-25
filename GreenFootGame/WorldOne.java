@@ -221,5 +221,9 @@ public class WorldOne extends World
         Destination destination4 = new Destination();
         addObject(destination4,860,552);
         destination4.setLocation(854,548);
+        removeObject(destination4);
+        DestinationOne destinationone = new DestinationOne();
+        addObject(destinationone,861,563);
+        destinationone.setLocation(854,555);
     }
 }

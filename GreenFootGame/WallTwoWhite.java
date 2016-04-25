@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Destination here.
+ * Write a description of class WallTwoWhite here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Destination extends Actor
+public class WallTwoWhite extends Wall
 {
     /**
-     * Act - do whatever the Destination wants to do. This method is called whenever
+     * Act - do whatever the WallTwoWhite wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
