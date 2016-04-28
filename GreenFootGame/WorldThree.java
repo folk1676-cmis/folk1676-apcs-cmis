@@ -17,17 +17,24 @@ public class WorldThree extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
-    prepare();
-}
+        prepare();
+    }
 
-/**
- * Prepare the world for the start of the program.
- * That is: create the initial objects and add them to the world.
- */
-private void prepare()
-{
-    Player player = new Player();
-    addObject(player,48,46);
-    player.setLocation(49,42);
-}
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Player player = new Player();
+        addObject(player,65,55);
+        WallHorizonWhite wallhorizonwhite = new WallHorizonWhite();
+        addObject(wallhorizonwhite,450,5);
+        WallHorizonWhite wallhorizonwhite2 = new WallHorizonWhite();
+        addObject(wallhorizonwhite2,450,595);
+        WallVerticalWhite wallverticalwhite = new WallVerticalWhite();
+        addObject(wallverticalwhite,5,300);
+        WallVerticalWhite wallverticalwhite2 = new WallVerticalWhite();
+        addObject(wallverticalwhite2,895,300);
+    }
 }

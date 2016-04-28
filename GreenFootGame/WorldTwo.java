@@ -92,5 +92,7 @@ public class WorldTwo extends World
         DestinationTwo destinationtwo = new DestinationTwo();
         addObject(destinationtwo,61,52);
         destinationtwo.setLocation(55,48);
+        DownAndUp downandup5 = new DownAndUp();
+        addObject(downandup5,728,553);
     }
 }

@@ -40,7 +40,24 @@ public class WorldOne extends World
         addObject(wallone2,770,340);
         WallTwo walltwo = new WallTwo();
         addObject(walltwo,390,497);
+        WallTwo walltwo2 = new WallTwo();
+        addObject(walltwo2,508,102);
+        WallTwo walltwo3 = new WallTwo();
+        addObject(walltwo3,508,372);
+        WallTwo walltwo4 = new WallTwo();
+        addObject(walltwo4,390,247);
+        RightAndLeft rightandleft = new RightAndLeft();
+        addObject(rightandleft,700,434);
+        RightAndLeft rightandleft2 = new RightAndLeft();
+        addObject(rightandleft2,700,174);
+        LeftAndRight leftandright = new LeftAndRight();
+        addObject(leftandright,200,310);
+        SlowDownAndUp slowdownandup = new SlowDownAndUp();
+        addObject(slowdownandup,200,174);
         Player player = new Player();
-        addObject(player,67,40);
+        addObject(player,65,55);
+        DestinationOne destinationone = new DestinationOne();
+        addObject(destinationone,845,541);
+        destinationone.setLocation(836,541);
     }
 }
