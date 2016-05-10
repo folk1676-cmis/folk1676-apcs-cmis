@@ -8,12 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
+    int obito = 0;
     /**
      * Act - do whatever the player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
+        die();
         if(Greenfoot.isKeyDown("left"))
         {
             setLocation(getX()-4,getY());
@@ -44,6 +46,20 @@ public class Player extends Actor
             if (isTouching(Wall.class))
             {
                 setLocation(getX(), getY() - 4);
+            }
+        }
+    }
+
+    public void die()
+    {
+        {
+            Actor crab;
+            crab = getOneObjectAtOffset(0, 0, Eat.class);
+            if(crab != null)
+            {
+                World world;
+                world = getWorld();
+                world.removeObject(crab);
             }
         }
     }

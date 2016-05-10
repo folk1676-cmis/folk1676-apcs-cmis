@@ -16,7 +16,7 @@ public class Lobster extends Actor
 
     public void moveAndTurn()
     {
-        move(1);
+        move(3);
 
         if(Greenfoot.isKeyDown("a"))
         {
