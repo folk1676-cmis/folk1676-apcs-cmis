@@ -36,5 +36,31 @@ public class WorldThree extends World
         addObject(wallverticalwhite,5,300);
         WallVerticalWhite wallverticalwhite2 = new WallVerticalWhite();
         addObject(wallverticalwhite2,895,300);
+        WallTwoWhite walltwowhite = new WallTwoWhite();
+        addObject(walltwowhite,260,125);
+        WallTwoWhite walltwowhite2 = new WallTwoWhite();
+        addObject(walltwowhite2,640,475);;
+        Random random = new Random();
+        addObject(random,250,360);
+        Random random2 = new Random();
+        addObject(random2,600,250);
+        Random random3 = new Random();
+        addObject(random3,500,400);
+        RandomReverse randomreverse = new RandomReverse();
+        addObject(randomreverse,650,360);
+        RandomReverse randomreverse2 = new RandomReverse();
+        addObject(randomreverse2,700,225);
+        RandomReverse randomreverse3 = new RandomReverse();
+        addObject(randomreverse3,300,230);
+        RandomReverse randomreverse4 = new RandomReverse();
+        addObject(randomreverse4,700,225);
+        DownAndUp downandup = new DownAndUp();
+        addObject(downandup,450,400);
+        UpAndDown upanddown = new UpAndDown();
+        addObject(upanddown,450,200);
+        LeftAndRight leftandright = new LeftAndRight();
+        addObject(leftandright,65,545);
+        LeftAndRightSlow leftandrightslow = new LeftAndRightSlow();
+        addObject(leftandrightslow,65,545);
     }
 }
