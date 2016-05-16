@@ -26,8 +26,8 @@ public class WorldThree extends World
      */
     private void prepare()
     {
-        Player player = new Player();
-        addObject(player,65,55);
+        ActualPlayer actualplayer = new ActualPlayer();
+        addObject(actualplayer,65,55);
         WallHorizonWhite wallhorizonwhite = new WallHorizonWhite();
         addObject(wallhorizonwhite,450,5);
         WallHorizonWhite wallhorizonwhite2 = new WallHorizonWhite();

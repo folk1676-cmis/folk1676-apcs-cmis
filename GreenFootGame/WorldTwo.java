@@ -86,9 +86,9 @@ public class WorldTwo extends World
         addObject(downandup3,478,553);
         DownAndUp downandup4 = new DownAndUp();
         addObject(downandup4,603,553);
-        Player player = new Player();
-        addObject(player,850,551);
-        player.setLocation(843,547);
+        ActualPlayer actualplayer = new ActualPlayer();
+        addObject(actualplayer,850,551);
+        actualplayer.setLocation(843,547);
         DestinationTwo destinationtwo = new DestinationTwo();
         addObject(destinationtwo,61,52);
         destinationtwo.setLocation(55,48);

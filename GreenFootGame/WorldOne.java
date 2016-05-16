@@ -54,8 +54,8 @@ public class WorldOne extends World
         addObject(leftandright,200,310);
         SlowDownAndUp slowdownandup = new SlowDownAndUp();
         addObject(slowdownandup,200,174);
-        Player player = new Player();
-        addObject(player,65,55);
+        ActualPlayer actualplayer = new ActualPlayer();
+        addObject(actualplayer,65,55);
         DestinationOne destinationone = new DestinationOne();
         addObject(destinationone,845,541);
         destinationone.setLocation(836,541);
