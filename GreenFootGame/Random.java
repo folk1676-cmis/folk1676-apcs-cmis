@@ -18,7 +18,16 @@ public class Random extends Enemy
             turn(2);
             move(4);
             die();
+            turnAtWall();
         } 
+    }
+
+    public void turnAtWall()
+    {
+        if ( isTouching(Wall.class) )
+        {
+            turn(180);
+        }    
     }
 
     public void die()
