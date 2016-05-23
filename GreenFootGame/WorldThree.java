@@ -62,5 +62,7 @@ public class WorldThree extends World
         addObject(leftandright,65,545);
         LeftAndRightSlow leftandrightslow = new LeftAndRightSlow();
         addObject(leftandrightslow,65,545);
+        DestinationThree destinationthree = new DestinationThree();
+        addObject(destinationthree,835,545);
     }
 }

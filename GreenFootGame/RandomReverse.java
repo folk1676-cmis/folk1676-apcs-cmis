@@ -18,17 +18,17 @@ public class RandomReverse extends Enemy
             turn(2);
             move(-4);
             die();
-            turnAtWall();
+            // turnAtWall();
         } 
     }
 
-    public void turnAtWall()
-    {
-        if ( isTouching(Wall.class) )
-        {
-            turn(180);
-        }    
-    }
+    // public void turnAtWall()
+    // {
+        // if ( isTouching(Wall.class) )
+        // {
+            // turn(180);
+        // }    
+    // }
 
     public void die()
     {
