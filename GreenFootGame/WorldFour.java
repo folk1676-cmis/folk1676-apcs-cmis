@@ -52,7 +52,6 @@ public class WorldFour extends World
         addObject(upanddown,218,170);
         UpAndDown upanddown2 = new UpAndDown();
         addObject(upanddown2,343,170);
-        
         DownAndUp downandup3 = new DownAndUp();
         addObject(downandup3,745,430);
         DownAndUp downandup4 = new DownAndUp();
@@ -61,7 +60,6 @@ public class WorldFour extends World
         addObject(upanddown3,682,170);
         UpAndDown upanddown4 = new UpAndDown();
         addObject(upanddown4,557,170);
-        
         RandomReverse randomreverse = new RandomReverse();
         addObject(randomreverse,405,430);
         RandomReverse randomreverse2 = new RandomReverse();
@@ -70,5 +68,7 @@ public class WorldFour extends World
         addObject(random,468,170);
         Random random2 = new Random();
         addObject(random2,593,170);
+        DestinationFour destinationfour = new DestinationFour();
+        addObject(destinationfour,50,60);
     }
 }

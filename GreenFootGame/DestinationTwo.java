@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class DestinationTwo extends Destination
+public class DestinationTwo extends Destination implements FinishLine
 {
     /**
      * Act - do whatever the DestinationTwo wants to do. This method is called whenever
@@ -28,5 +28,10 @@ public class DestinationTwo extends Destination
             world.removeObject(crab);
             Greenfoot.setWorld(new WorldThree());
         }
+    }
+
+    public void teleport()
+    {
+
     }
 }

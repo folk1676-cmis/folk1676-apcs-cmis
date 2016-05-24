@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ActualPlayer extends Player
+public class ActualPlayer extends Player implements Character
 {
     int obito = 0;
     /**
