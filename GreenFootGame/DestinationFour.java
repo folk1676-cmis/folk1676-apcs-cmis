@@ -29,7 +29,7 @@ public class DestinationFour extends Destination
             World world;
             world = getWorld();
             world.removeObject(crab);
-            Greenfoot.setWorld(new WorldThree());
+            Greenfoot.setWorld(new Finish());
         }
     }
 
