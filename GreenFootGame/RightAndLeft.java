@@ -26,6 +26,10 @@ public class RightAndLeft extends Enemy
         {
             turn(180);
         }    
+        else
+        {
+            turn(360);
+        }
     }
 
     public void die()

@@ -20,7 +20,11 @@ public class LeftAndRightSlow extends Enemy
         if ( isTouching(Wall.class) )
         {
             turn(180);
-        }    
+        }  
+        else
+        {
+            turn(360);
+        }
     }
 
     public void die()

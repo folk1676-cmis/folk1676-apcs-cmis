@@ -28,5 +28,15 @@ public class Finish extends World
     {
         JohnCena johncena = new JohnCena();
         addObject(johncena,94,87);
-    }
+        WallHorizon wallhorizon = new WallHorizon();
+        addObject(wallhorizon,450,5);
+        WallHorizon wallhorizon2 = new WallHorizon();
+        addObject(wallhorizon2,450,595);
+        WallVertical wallvertical = new WallVertical();
+        addObject(wallvertical,5,300);
+        WallVertical wallvertical2 = new WallVertical();
+        addObject(wallvertical2,895,300);
+    CMPunk cmpunk = new CMPunk();
+addObject(cmpunk,727,394);
+}
 }
