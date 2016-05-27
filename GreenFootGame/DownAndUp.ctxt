@@ -7,6 +7,4 @@ comment2.params=
 comment2.target=DownAndUp()
 comment3.params=
 comment3.target=void\ turnAtWall()
-comment4.params=
-comment4.target=void\ die()
-numComments=5
+numComments=4

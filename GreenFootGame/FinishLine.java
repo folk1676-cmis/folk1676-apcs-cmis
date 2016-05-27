@@ -7,6 +7,5 @@
 public interface FinishLine  
 {
     public void finish();
-
     public void teleport();
 }

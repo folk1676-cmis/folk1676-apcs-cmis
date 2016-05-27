@@ -6,14 +6,61 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Player extends Actor
+public abstract class Player extends Actor
 {
+    int obito = 0;
     /**
-     * Act - do whatever the Player wants to do. This method is called whenever
+     * Act - do whatever the player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        die();
+        if(Greenfoot.isKeyDown("left"))
+        {
+            setLocation(getX()-4,getY());
+            if (isTouching(Wall.class))
+            {
+                setLocation(getX() + 4, getY());
+            }
+        }
+        if(Greenfoot.isKeyDown("right"))
+        {
+            setLocation(getX()+4,getY());
+            if (isTouching(Wall.class))
+            {
+                setLocation(getX() - 4, getY());
+            }
+        }
+        if(Greenfoot.isKeyDown("up"))
+        {
+            setLocation(getX(),getY()-4);
+            if (isTouching(Wall.class))
+            {
+                setLocation(getX(), getY() + 4);
+            }
+        }
+        if(Greenfoot.isKeyDown("down"))
+        {
+            setLocation(getX(),getY()+4);
+            if (isTouching(Wall.class))
+            {
+                setLocation(getX(), getY() - 4);
+            }
+        }
+    }
+
+    public void die()
+    {
+        {
+            Actor crab;
+            crab = getOneObjectAtOffset(0, 0, Eat.class);
+            if(crab != null)
+            {
+                World world;
+                world = getWorld();
+                world.removeObject(crab);
+            }
+        }
+    }
 }
