@@ -21,17 +21,24 @@ public class DestinationOne extends Destination implements FinishLine
     {
         Actor crab;
         crab = getOneObjectAtOffset(0, 0, Player.class);
-        if(crab != null)
+        while (crab != null)
         {
             World world;
             world = getWorld();
             world.removeObject(crab);
-            Greenfoot.setWorld(new WorldTwo());
+            crab = getOneObjectAtOffset(0, 0, Player.class);
+            destination();
         }
+
     }
 
+    public void destination()
+    {
+        Greenfoot.setWorld(new WorldTwo());
+    }
+    
     public void teleport()
     {
-
+        
     }
 }

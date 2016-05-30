@@ -14,9 +14,10 @@ public class FinnBalor extends Ally
      */
     public void act() 
     {
-        move(3);
+        move(2);
         followNPC();
         turnAtWall();
+        die();
     }    
 
     public void turnAtWall()
@@ -28,19 +29,6 @@ public class FinnBalor extends Ally
         else
         {
             turn(360);
-        }
-    }
-
-    public void die()
-    {
-        Actor crab;
-        crab = getOneObjectAtOffset(0, 0, Enemy.class);
-        if(crab != null)
-        {
-            World world;
-            world = getWorld();
-            world.removeObject(crab);
-            Greenfoot.setWorld(new RealWin());
         }
     }
 
@@ -62,5 +50,18 @@ public class FinnBalor extends Ally
             }
             turnTowards(kill.getX(),kill.getY());
         }   
+    }
+
+    public void die()
+    {
+        Actor crab;
+        crab = getOneObjectAtOffset(0, 0, Enemy.class);
+        if(crab != null)
+        {
+            World world;
+            world = getWorld();
+            world.removeObject(crab);
+            Greenfoot.setWorld(new Victory());
+        }
     }
 }

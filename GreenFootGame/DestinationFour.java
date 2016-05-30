@@ -24,13 +24,20 @@ public class DestinationFour extends Destination
     {
         Actor crab;
         crab = getOneObjectAtOffset(0, 0, Player.class);
-        if(crab != null)
+        while (crab != null)
         {
             World world;
             world = getWorld();
             world.removeObject(crab);
-            Greenfoot.setWorld(new Finish());
+            crab = getOneObjectAtOffset(0, 0, Player.class);
+            destination();
         }
+
+    }
+
+    public void destination()
+    {
+        Greenfoot.setWorld(new Finish());
     }
 
     public void teleport()

@@ -10,7 +10,7 @@ public class CMPunk extends Enemy
 {
     public void act() 
     {
-        move(4);
+        move(5);
         followHuman();
         turnAtWall();
         die();

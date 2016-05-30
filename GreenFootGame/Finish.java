@@ -37,8 +37,8 @@ public class Finish extends World
         WallVertical wallvertical2 = new WallVertical();
         addObject(wallvertical2,895,300);
         CMPunk cmpunk = new CMPunk();
-        addObject(cmpunk,727,394);
-    FinnBalor finnbalor = new FinnBalor();
-addObject(finnbalor,361,521);
-}
+        addObject(cmpunk,727,100);
+        FinnBalor finnbalor = new FinnBalor();
+        addObject(finnbalor,361,521);
+    }
 }
